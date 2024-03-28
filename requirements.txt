@@ -1,0 +1,2 @@
+# SSBM API for interacting with virutal console, gamecube controller, and gamestate
+melee
