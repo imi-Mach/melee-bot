@@ -1,2 +1,5 @@
 # SSBM API for interacting with virutal console, gamecube controller, and gamestate
 melee
+
+# deep learning library
+torch==2.2.2
