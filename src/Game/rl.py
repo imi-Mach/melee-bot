@@ -1,3 +1,22 @@
+'''
+Useful links:
+Dev infrastructure:
+https://dolphin-emu.org/blog/2015/01/25/making-developers-more-productive-dolphin-development-infrastructure/ 
+Dolphin Wiki:
+https://wiki.dolphin-emu.org/index.php?title=Main_Page
+Silipi communication protocol (used for gamestate):
+https://github.com/project-slippi/slippi-wiki 
+Event message for player actions during game:
+https://github.com/project-slippi/slippi-js/blob/master/src/console/communication.ts 
+Slippi Memory Watcher:
+https://github.com/project-slippi/Ishiiruka/blob/slippi/Source/Core/Core/MemoryWatcher.cpp 
+Message types (slippstream events):
+https://github.com/project-slippi/Nintendont/blob/594fb6d24cebc2302ec72d80d0baf5343e313e11/scripts/slippi-cmdparse#L38 
+Networking (how messages are sent from server to client):
+https://github.com/project-slippi/Nintendont/blob/594fb6d24cebc2302ec72d80d0baf5343e313e11/kernel/SlippiNetwork.c#L497 
+
+'''
+
 from ..Bots.moves import Actions
 
 
