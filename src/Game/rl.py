@@ -66,7 +66,19 @@ class DQN(nn.Module):
         x = F.relu(self.layer1(x))
         x = F.relu(self.layer2(x))
         return self.layer3(x)
-    
+
+class DQN_Agent():
+    def __init__(self) -> None:
+
+        # reinforcement learning parameters
+        self.GAMMA = 0.99
+        self.EPS_START = 0.9
+        self.EPS_END = 0.05
+        self.EPS_DECAY = 1000
+        self.TAU = 0.005
+        self.LR = 1e-4
+
+        action
 
 # BATCH_SIZE is the number of transitions sampled from the replay buffer
 # GAMMA is the discount factor as mentioned in the previous section
