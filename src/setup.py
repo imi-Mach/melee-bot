@@ -1,4 +1,4 @@
-from src.args import melee_parser
+from args import melee_parser
 
 import Game.play
 
@@ -28,12 +28,13 @@ if __name__ == "__main__":
                                        type=melee.ControllerType.GCN_ADAPTER)
     
     def signal_handler(sig, frame):
-        console.stop()
+        
         if args.debug:
             log.writelog()
             print("") #because the ^C will be on the terminal
             print("Log file created: " + log.filename)
         print("Shutting down cleanly...")
+        console.stop()
         sys.exit(0)
 
     signal.signal(signal.SIGINT, signal_handler)
@@ -53,4 +54,4 @@ if __name__ == "__main__":
     print("Controller connected")
 
     
-    Game.play.entry(console,controller,args.port, args.opponent)
+    Game.play.entry(console,controller,args.port, args.opponent, log)
